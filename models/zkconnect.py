@@ -61,4 +61,3 @@ def zkdisconnect(self):
     
     self.data_recv, addr = self.zkclient.recvfrom(1024)
     return self.checkValid( self.data_recv )
-    

@@ -2,7 +2,7 @@
 ###################################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
-#    Copyright (C) 2018-TODAY Cybrosys Technologies(<http://www.cybrosys.com>).
+#    Copyright (C) 2021-TODAY Cybrosys Technologies(<http://www.cybrosys.com>).
 #    Author: cybrosys(<https://www.cybrosys.com>)
 #
 #    This program is free software: you can modify
@@ -21,9 +21,9 @@
 ###################################################################################
 {
     'name': 'Biometric Device Integration',
-    'version': '12.0.1.1.1',
-    'summary': """Integrating Biometric Device With HR Attendance (Face + Thumb)""",
-    'description': 'This module integrates Odoo with the biometric device(Model: ZKteco uFace 202)',
+    'version': '15.0.1.1.0',
+    'summary': """Integrating Biometric Device (Model: ZKteco uFace 202) With HR Attendance (Face + Thumb)""",
+    'description': """This module integrates Odoo with the biometric device(Model: ZKteco uFace 202),odoo15,odoo,hr,attendance""",
     'category': 'Generic Modules/Human Resources',
     'author': 'Cybrosys Techno Solutions, Mostafa Shokiel',
     'company': 'Cybrosys Techno Solutions',
@@ -34,11 +34,9 @@
         'views/zk_machine_view.xml',
         'views/zk_machine_attendance_view.xml',
         'data/download_data.xml'
-
     ],
-    'images': ['static/description/banner.gif'],
+    'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
-    'demo': [],
     'installable': True,
     'auto_install': False,
     'application': False,
