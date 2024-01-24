@@ -1,412 +1,185 @@
-<section class="oe_container" style="background-image:url(https://www.cybrosys.com/images/odoo-index-header-banner.png);background-repeat:no-repeat;background-size:100%;padding: 4% 0% 2% 15%;background-position-y: -107px;">
-    <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="font-size: 35px;color: #fff;font-weight: 900;text-transform: uppercase;text-align: left;margin: 0;margin-bottom: 16px;">
-             HR Biometric Device Integration
+<!--Part of 10 Orbits Pvt. Ltd. See LICENSE for full copyright and licensing details.-->
+
+<!-- Please Uncomment below style for directly editing and viewing, For odoo these styles are kept in src/*.css file and imported through web.assets_backend model.-->
+
+<!-- <style>
+ul.text-left li{
+padding:0.6em 1em; border-bottom:1px solid rgba(28,67,117, 0.2);
+}
+.to_footer:before {
+content: "";
+position: absolute;
+height: 64px;
+top: -33px;
+background: #1c4375;
+left: 0;
+width: 100%;
+right: 0;
+transform: rotate(-3deg) skewX(-3deg);
+}
+</style> -->
+
+<section style="background: rgb(28,67,117);background: linear-gradient(0deg, rgba(28,67,117,1) 29%, rgba(2,36,80,1) 86%);margin-top: 10px; padding: 20px; position: relative;">
+
+        <h1 class="oe_slogan" style="margin-left: 40px; font-weight: bold; color: #fff; font-size: 3em;">Biometric Device Integration PyZk</h1>
+        <h2 class="oe_slogan" style="color: #fff;  margin-top: 30px; margin-left: 40px; font-size: 1.6em; padding-right:30rem;">
+        Biometric Attendance module for Integration with Zkteco Biometric Attendance devices.
         </h2>
-        <h3 class="oe_slogan" style="font-size: 25px;color: #fff;font-weight: 600;text-align: left;opacity: 1;margin: 0 !important;">
-           This Module Integrates Biometric Device With HR Attendance
-        </h3>
-        <h5 class="oe_slogan" style="text-align: left;background: #fff;width: 293px;padding: 10px;color: #080808 !important;opacity: 1 !important;font-weight: 600;font-size: 20px;">
-            <a style="color: #080808 !important;" href="https://www.cybrosys.com" target="_blank">Cybrosys Technologies</a>
-        </h5>
-        <a style="color: #080808 !important;" href="https://www.cybrosys.com" target="_blank">
-            <div style="width: 215px;margin-left: 57%;text-align: center;background: #ffffff;height: 215px;border-radius: 100%;display: flex;justify-content: center;align-items: center;box-shadow: 0 0 12px 4px #00000059;">
-                    <img src="https://www.cybrosys.com/images/cybro-logo-oca.png" alt="cybrosys technologies" style="width: 180px;"/>
-            </div>
+        <p style="color: #f1e7e7; margin-left: 40px; margin-top: 15px; font-size:1.2em;padding-right:30rem">Supports wide range of Zkteco devices. [based on <a href="https://github.com/fananimi/pyzk" style="color:#fff">pyzk</a>; unofficial zkteco python library]</p>
+
+
+<div style="position:absolute; right:0; bottom:40px;">
+        <a href="https://10orbits.com" class="pull-right" title="Visit 10orbits Website" target="_blank" style="margin-right: 40px;">
+        <img src="10orbits-logo.png" alt="10orbits logo" style="width: 18em; margin-top:2em">
         </a>
-    </div>
+</div>
 </section>
-<section class="oe_container" style="padding: 1% 0% 3% 15%;">
-    <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-            Overview
-        </h2>
-        <h3 class="oe_slogan" style="text-align: left;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-            Automation is an implementation factor for a successful ERP. Using this module, HR attendance can be automated via integrating Thumb / Face detection device with Odoo.
-            One can configure a user both from thumbing device or Odoo employee form.
-        </h3>
-    </div>
+<img src="top.svg">
+<section class="oe_container oe_dark  text-center" style="padding: 60px 1rem;">
+<div class="oe_row oe_spaced">
+<h2 class="oe_slogan" style="color:#1c4375; margin-top: 6rem; font-weight: bold;">Integrate Zkteco devices</h2>
+<span style="height: 0;width: 46px;border-bottom: 3px solid #1c4375;display: inline-block;margin: 2rem 0 2rem 0;"></span>
+<h3 class="oe_slogan" style="margin-bottom:2rem; font-size: 18px;">Easily add your Zkteco devices</h3>
+<div class="oe_span12">
+        <img class="oe_picture oe_screenshot" src="device_form.png" style="margin-left: auto;margin-right: auto;vertical-align: middle;max-width: 100%;border: 10px solid rgba(28,67,117, 0.2);border-radius: 10px;">
+</div>
+<h3 class="oe_slogan" style="margin: 6rem 0 2rem 0; font-size: 18px;">Also add multiple/multilocation Zkteco devices </h3>
+<div class="oe_span12">
+        <img class="oe_picture oe_screenshot" src="device_list.png" style="margin-left: auto;margin-right: auto;vertical-align: middle;max-width: 100%;border: 10px solid rgba(28,67,117, 0.2);border-radius: 10px;">
+</div>
+</div>
 </section>
-<section class="oe_container" style="background-image:url(https://www.cybrosys.com/images/odoo-index-banner.png); background-repeat:no-repeat; background-size:cover;padding: 10% 0% 25% 15%;">
-    <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-             Features
-        </h2>
-         <h3 class="oe_slogan" style="text-align: left;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 18px;">
-            <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-            Integrates biometric device(Face+Thumb) with HR attendance.
 
-         </h3>
-         <h3 class="oe_slogan" style="text-align: left;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 18px;">
-            <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-            Option to keep the device attendance log in Odoo.
-         </h3>
-        <h3 class="oe_slogan" style="text-align: left;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 18px;">
-            <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-            Option to clear the device attendance log from both device and Odoo.
+<section class="text-center">
+<div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#1c4375; margin-top: 6rem; font-weight: bold">Supported Devices</h2>
+        <span style="height: 0;width: 46px;border-bottom: 3px solid #1c4375;display: inline-block;margin: 2rem 0;"></span>
+        <h3 class="oe_slogan" style="margin-bottom:2rem; font-size: 18px;">This device requires pyzk python library.</h3>
 
-         </h3>
-        <h3 class="oe_slogan" style="text-align: left;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 18px;">
-            <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-            Automating HR attendance.
-        </h3>
-        <h3 class="oe_slogan" style="text-align: left;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 18px;">
-            <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-            Option to configure multiple devices.
+        <p class="text-center" style="margin: auto; margin-top:10px; margin-bottom: 30px; font-size: 16px; padding-left: 15px;">Install With : <code>pip3 install pyzk</code></p>
+        <ul class="text-left" style="list-style:none; margin: auto;padding:0; font-size: 16px;border:1px solid rgba(28,67,117, 0.2); border-radius:10px;">
+                <li>Platform : ZEM500
+                        DeviceName : U580 (Works perfectly
+                        </li>
+                <li>Platform : ZEM510_TFT
+                        DeviceName : T4-C (Works perfectly)</li>
+                <li>Platform : ZEM510_TFT
+                        DeviceName : T4-C (Works perfectly)</li>
+                <li>Platform : ZEM600_TFT
+                        DeviceName : iClock260 (Works perfectly)</li>
+                <li>Platform : ZEM560_TFT
+                        DeviceName : (Works perfectly)
+                </li>
+                <li>Platform : ZEM800_TFT
+                        DeviceName : iFace402/ID (Works perfectly)</li>
+                <li>Platform : ZEM560
+                        DeviceName : MA300 (Works perfectly)</li>
+                <li>Platform : ZEM600_TFT
+                        DeviceName : iFace800/ID (Works perfectly)</li>
+                <li>Platform : JZ4725_TFT
+                        DeviceName : K14 (tested &amp; verified working as expected.)</li>
+                <li>Platform : ZMM220_TFT
+                        DeviceName : (unknown device) (broken info; but at least the important data was read)</li>
+                <li>Platform : JZ4725_TFT
+                        DeviceName : K20 (latest checked correctly!)</li>
+                <li>Platform : ZEM600_TFT
+                        DeviceName : VF680 (face device only,successful download of the user and attendance list!)</li>
+                <li>Platform : ZLM30_TFT
+                        DeviceName : RSP10k1 (latest checked correctly!)</li>
+                <li>Platform : JZ4725_TFT
+                        DeviceName : iClock260 (Works perfectly)</li>
+                <li>Platform : ZMM200_TFT
+                        DeviceName : iClock3000/ID (Active testing! latest fix)</li>
+                <li>Platform : ZEM600_TFT
+                        DeviceName : iClock880-H/ID (Active testing! latest fix)</li>
+                <li style="background: rgba(28,67,117, 0.2);  border-bottom: 0;border-radius: 0 0 10px 10px;">more to be added ........</li>
 
-        </h3>
-        <h3 class="oe_slogan" style="text-align: left;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 18px;">
-            <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-            This module will support with ZKteco model 'uFace 202', ZKteco model 'iFace990'
-        </h3>
-    </div>
+        </ul>
+
+
+</div>
 </section>
-<section class="oe_container" style="padding: 3% 0% 0% 15%;">
-    <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-             Biometric Device Configuration
-        </h2>
-        <h3 class="oe_slogan" style="text-align: left;padding: 5% 0% 0% 0%;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-            <div>
-                <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-                Here you can configure your all devices with it's IP address and port number.
-            </div>
-         </h3>
-        <div class="oe_row oe_spaced">
-            <img src="hr_zk_attendance_cybrosys_1.png" alt="" style="width: 95%;"/>
-        </div>
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-            Download/Clear Device Attendance Log
-        </h2>
-        <h3 class="oe_slogan" style="text-align: left;padding: 5% 0% 0% 0%;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-            <div>
-                <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-                After configuration, you can download your device attendance log into Odoo through
-                'Download' button.If the device is connected, then the Odoo will download all device
-                attendance log.
-                Otherwise, the Odoo will display you a warning message as follow.
-            </div>
-         </h3>
-        <div class="oe_row oe_spaced">
-            <img src="hr_zk_attendance_cybrosys_2.png" alt="" style="width: 95%;"/>
-        </div>
-        <h3 class="oe_slogan" style="text-align: left;padding: 5% 0% 0% 0%;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-            <div><i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-             You can also clear all attendance log from both Odoo and device via 'Clear' button.
-                If the device is not connected it will display you a warning message as follow.
-            </div>
-        </h3>
-        <div class="oe_row oe_spaced">
-            <img src="hr_zk_attendance_cybrosys_3.png" alt="" style="width: 95%;"/>
-        </div>
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-            Biometric Device Attendance Log
-        </h2>
-        <h3 class="oe_slogan" style="text-align: left;padding: 5% 0% 0% 0%;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-            <div>
-                <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-                Here you can see all device attendance log
-            </div>
-         </h3>
-        <div class="oe_row oe_spaced">
-            <img src="hr_zk_attendance_cybrosys_4.png" alt="" style="width: 95%;"/>
-        </div>
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-            HR Attendance
-        </h2>
-        <h3 class="oe_slogan" style="text-align: left;padding: 5% 0% 0% 0%;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-            <div><i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-              Here, Odoo automatically generates HR attendance log while downloading the device attendance.
-            </div>
-        </h3>
-        <div class="oe_row oe_spaced">
-            <img src="hr_zk_attendance_cybrosys_5.png" alt="" style="width: 95%;"/>
-        </div>
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-           Employee Configuration
-        </h2>
-        <h3 class="oe_slogan" style="text-align: left;padding: 5% 0% 0% 0%;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-            <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-            You can update existing employees with the 'Device Id' which are the id in the biometric device.
-            If there is no match with the biometric device id then system will automatically create corresponding employee.
-         </h3>
-        <div class="oe_row oe_spaced">
-            <img src="hr_zk_attendance_cybrosys_6.png" alt="" style="width: 95%;"/>
-        </div>
-        <h3 class="oe_slogan" style="text-align: left;padding: 5% 0% 0% 0%;font-size: 16px;width: 90%;margin: 0;margin-top: 14px;color: #000 !important;opacity: 1 !important;line-height: 24px;">
-            <i class="fa fa-check-circle-o" style="width:40px; color:#07B700"></i>
-        Note:- This integration is only applicable for the device ZKteco model 'uFace 202'<br/>
-        Please install zklib library (sudo pip install zklib)
-         </h3>
-    </div>
+<section class="oe_container text-center" style="padding: 0px 1rem;">
+<div class="oe_row oe_spaced">
+<h2 class="oe_slogan" style="color:#1c4375; margin-top: 6rem; font-weight: bold;">Test your connection to Zkteco device</h2>
+<span style="height: 0;width: 46px;border-bottom: 3px solid #1c4375;display: inline-block;margin: 2rem 0"></span>
+
+<h3 class="oe_slogan" style="margin-bottom: 2rem; font-size: 18px;">Connection Up</h3>
+<div>
+        <img class="oe_picture oe_screenshot" src="test_connection_pass.png" style="margin-left: auto;margin-right: auto;vertical-align: middle; display: block; max-width: 100%;border: 10px solid rgba(28,67,117, 0.2);border-radius: 10px;">
+</div>
+<h3 class="oe_slogan" style="margin: 6rem 0 2rem 0; font-size: 18px; font-size: 18px;">Connection Down</h3>
+<div>
+        <img class="oe_picture oe_screenshot" src="test_connection_fail.png" style="margin-left: auto;margin-right: auto;vertical-align: middle; display: block; max-width: 100%;border: 10px solid rgba(28,67,117, 0.2);border-radius: 10px;">
+</div>
+</div>
 </section>
-<section class="oe_container" style="padding: 7px 0% 0% 3%;">
-     <div class="oe_row oe_spaced">
-         <a style="color: #080808 !important;" href="https://apps.odoo.com/apps/modules/browse?search=cybrosys" target="_blank"><img src="https://www.cybrosys.com/images/view-more-apps.jpg" alt="cybrosys technologies" style="width: 100%;margin-bottom: 50px;"/></a>
-     </div>
+
+<section class="oe_container oe_dark text-center" style="padding: 60px 10rem;">
+<div class="oe_row oe_spaced">
+<h2 class="oe_slogan" style="color:#1c4375; margin-top: 6rem; font-weight: bold">See Attendances Records within Odoo </h2>
+<span style="height: 0;width: 46px;border-bottom: 3px solid #1c4375;display: inline-block;margin: 2rem 0 3rem 0;"></span>
+
+<h3 class="oe_slogan" style="margin-bottom: 2rem; font-size: 18px;">Attendance records that are in Zkteco device</h3>
+<div>
+        <img class="oe_picture oe_screenshot" src="attendance_log.png" style="margin-left: auto;margin-right: auto;vertical-align: middle; display: block; max-width: 100%;border: 10px solid rgba(28,67,117, 0.2);border-radius: 10px;">
+</div>
+<h3 class="oe_slogan" style="margin: 6rem 0 2rem 0; font-size: 18px;">Attendance records in Odoo Attendance</h3>
+<div>
+        <img class="oe_picture oe_screenshot" src="odoo_attendance.png" style="margin-left: auto;margin-right: auto;vertical-align: middle; display: block; max-width: 100%;border: 10px solid rgba(28,67,117, 0.2);border-radius: 10px;">
+</div>
+</div>
 </section>
-<section class="oe_container" style="padding: 1% 0% 0% 3%;">
-    <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-            Our Services
-        </h2>
-        <div style="display:flex;padding-top: 20px;justify-content: space-between;">
-            <div style="flex-basis: 18%;">
 
-                    <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-                            <a href="https://www.cybrosys.com/odoo-customization-and-installation/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/odoo-customization.png" style="width: 100%;border-radius: 100%;"/>
-                            </a>
-                    </div>
-                     <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-                         <a href="https://www.cybrosys.com/odoo-customization-and-installation/" target="_blank">
-                        Odoo Customization
-                         </a>
-                     </h3>
+<section class="oe_container to_footer" style="padding: 30px 60px 40px; background: #1c4375; position: relative; margin-top: 10rem;">
 
-            </div>
-             <div style="flex-basis: 18%;">
+        <div class="row">
+                <div class="col-md-5" style="padding-right: 20px;">
+                <a href="https://10orbits.com" title="Visit 10Orbits Website">
+                        <figure>
+                        <img src="10orbits-logo.png" alt="10Orbits Logo" style="width: 14em;">
+                        </figure>
+                </a>
+                <ul style="list-style: none; padding: 0; margin-top:20px">
+                        <li style="display: inline-block; margin: 5px 8px;"><a href="https://www.facebook.com/10orbits/" target="_blank" title="Visit 10Orbits Facebook Page"><img src="facebook.svg" alt="" style="height: 20px;"></a></li>
+                        <li style="display: inline-block; margin: 5px 8px;"><a href="https://twitter.com/10Orbits" target="_blank" title="Visit 10Orbits Twitter"><img src="twitter.svg" alt="" style="height: 20px;"></a></li>
+                        <li style="display: inline-block; margin: 5px 8px;"><a href="https://www.instagram.com/10orbits/" target="_blank" title="Visit 10Orbits Instagram Page"><img src="instagram.svg" alt="" style="height: 20px;"></a></li>
+                        <li style="display: inline-block; margin: 5px 8px;"><a href="https://www.youtube.com/channel/UCR_0sVbzSHts2cUptjeSudQ/" target="_blank" title="Visit 10Orbits Youtube Channel"><img src="youtube.svg" alt="" style="height: 20px;"></a></li>
+                        <li style="display: inline-block; margin: 5px 8px;"><a href="https://www.linkedin.com/company/10orbits/" target="_blank" title="Visit 10Orbits Linkedin Profile"><img src="linkedin.svg" alt="" style="height: 20px;"></a></li>
+                </ul>
+                </div>
+                <div class="col-md-7">
 
-                <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-                        <a href="https://www.cybrosys.com/odoo-erp-implementation/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/odoo-erp-implementation.png" style="width: 100%;border-radius: 100%;"/>
+                <h2 style="margin-bottom:35px;  color: #fff;font-size:1.5em">We are available for your support</h2>
+
+                <ul style="list-style: none;padding:0;">
+                        <li style="display: inline-block;margin-right: 15px;background: #fff;padding: 0.7em 1.5em;border-radius: 5px;font-weight: bold;font-size: 1.1em;">
+                        <a href="https://www.10orbits.com/contact" style="color: #000;" target="_blank">
+                                <img src="envelope.svg" alt="" style="width: 16px; margin-right: 5px;">
+                                <span>Email Us</span>
                         </a>
-                </div>
-                 <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-                    <a href="https://www.cybrosys.com/odoo-erp-implementation/" target="_blank">
-                        Odoo Implementation </a>
-                 </h3>
+                        </li>
 
-            </div>
-             <div style="flex-basis: 18%;">
-
-                <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-                    <a href="https://www.cybrosys.com/odoo-erp-integration/" target="_blank">
-                        <img src="https://www.cybrosys.com/images/odoo-erp-integration.png" style="width: 100%;border-radius: 100%;"/>
-                    </a>
-                </div>
-                 <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-                    <a href="https://www.cybrosys.com/odoo-erp-integration/" target="_blank">
-                        Odoo Integration
-                    </a>
-                 </h3>
-
-            </div>
-             <div style="flex-basis: 18%;">
-
-                <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-                        <a href="https://www.cybrosys.com/odoo-erp-support/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/odoo-erp-support.png" style="width: 100%;border-radius: 100%;"/>
+                        <li style="    display: inline-block;margin-right: 15px;background: #fff;padding: 0.7em 1.5em;border-radius: 5px;font-weight: bold;font-size: 1.1em;">
+                        <a href="https://www.10orbits.com/contact" style="color: #000;" target="_blank">
+                                <img src="settings.svg" alt="" style="width: 16px; margin-right: 5px;">
+                                <span>Request</span>
                         </a>
-                </div>
-                 <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-                    <a href="https://www.cybrosys.com/odoo-erp-support/" target="_blank">
-                        Odoo Support</a>
-                 </h3>
+                        </li>
 
-            </div>
-             <div style="flex-basis: 18%;">
-
-                <div style="width:75px;height:75px;background:#fff; border-radius:100%;margin: auto;">
-                        <a href="https://www.cybrosys.com/hire-odoo-developer/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/hire-odoo-developer.png" style="width: 100%;border-radius: 100%;"/>
+                        <li style="display: inline-block;margin-right: 15px;background: #fff;padding: 0.7em 1.5em;border-radius: 5px;font-weight: bold;font-size: 1.1em;">
+                        <a href="https://www.10orbits.com/contact" style="color: #000;" target="_blank">
+                                <img src="phone-call.svg" alt="" style="width: 16px; margin-right: 5px;">
+                                <span>Contact Us</span>
                         </a>
+                        </li>
+
+                </ul>
+
                 </div>
-                 <h3 class="oe_slogan" style="font-weight: 800;text-align: center;font-size: 14px;width: 100%;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;">
-                    <a href="https://www.cybrosys.com/hire-odoo-developer/" target="_blank">
-                        Hire Odoo Developers</a>
-                 </h3>
-                     </a>
-            </div>
         </div>
-    </div>
-</section>
-<section class="oe_container" style="padding: 1% 0% 0% 3%;">
-     <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="text-align: left;font-size: 28px;font-weight: 600;margin: 0px !important;">
-            Our Industries
-        </h2>
-        <div style="display:flex;justify-content: space-between;flex-wrap:wrap;">
-            <div style="flex-basis: 32%;padding-top: 20px;">
 
-                    <div style="width:30%; float:left;">
-                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-                            <a href="https://www.cybrosys.com/odoo/industries/best-trading-erp/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/odoo-index-industry-1.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="width:70%;float:left;">
-                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-                         <a href="https://www.cybrosys.com/odoo/industries/best-trading-erp/" target="_blank">
-                        Trading
-                         </a>
-                     </h3>
-                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-                        Easily procure and sell your products.
-                     </h3>
-                        </div>
-
-            </div>
-            <div style="flex-basis: 32%;padding-top: 20px;">
-
-                    <div style="width:30%; float:left;">
-                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-                            <a href="https://www.cybrosys.com/odoo/industries/manufacturing-erp-software/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/odoo-index-industry-2.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="width:70%;float:left;">
-                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-                        <a href="https://www.cybrosys.com/odoo/industries/manufacturing-erp-software/" target="_blank">
-                            Manufacturing</a>
-                     </h3>
-                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-                        Plan, track and schedule your operations.
-                     </h3>
-                        </div>
-
-            </div>
-            <div style="flex-basis: 32%;padding-top: 20px;">
-
-                    <div style="width:30%; float:left;">
-                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-                            <a href="https://www.cybrosys.com/odoo/industries/restaurant-management/" target="_blank">
-                                <img src="https://www.cybrosys.com/images/odoo-index-industry-3.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="width:70%;float:left;">
-                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-                        <a href="https://www.cybrosys.com/odoo/industries/restaurant-management/" target="_blank">
-                            Restaurant</a>
-                     </h3>
-                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-                        Run your bar or restaurant methodical.
-                     </h3>
-                        </div>
-
-            </div>
-            <div style="flex-basis: 32%;padding-top: 20px;">
-
-                    <div style="width:30%; float:left;">
-                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-                            <a href="https://www.cybrosys.com/odoo/industries/pos/" target="_blank">
-                                <img src="https://www.cybrosys.com/images/odoo-index-industry-4.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="width:70%;float:left;">
-                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-                        <a href="https://www.cybrosys.com/odoo/industries/pos/" target="_blank">
-                            POS</a>
-                     </h3>
-                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-                        Easy configuring and convivial selling.
-                     </h3>
-                        </div>
-
-            </div>
-            <div style="flex-basis: 32%;padding-top: 20px;">
-
-                    <div style="width:30%; float:left;">
-                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-                            <a href="https://www.cybrosys.com/odoo/industries/ecommerce-website/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/odoo-index-industry-5.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="width:70%;float:left;">
-                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 0px;margin-left: 16px;">
-                        <a href="https://www.cybrosys.com/odoo/industries/ecommerce-website/" target="_blank">
-                            E-commerce & Website</a>
-                     </h3>
-                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-                        Mobile friendly, awe-inspiring product pages.
-                     </h3>
-                    </div>
-            </div>
-            <div style="flex-basis: 32%;padding-top: 20px;">
-
-                    <div style="width:30%; float:left;">
-                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-                            <a href="https://www.cybrosys.com/odoo/industries/hotel-management-erp/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/odoo-index-industry-6.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="width:70%;float:left;">
-                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-                        <a href="https://www.cybrosys.com/odoo/industries/hotel-management-erp/" target="_blank">
-                            Hotel Management</a>
-                     </h3>
-                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-                        An all-inclusive hotel management application.
-                     </h3>
-                        </div>
-            </div>
-            <div style="flex-basis: 32%;padding-top: 20px;">
-
-                    <div style="width:30%; float:left;">
-                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-                            <a href="https://www.cybrosys.com/odoo/industries/education-erp-software/" target="_blank">
-                            <img src="https://www.cybrosys.com/images/odoo-index-industry-7.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="width:70%;float:left;">
-                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-                        <a href="https://www.cybrosys.com/odoo/industries/education-erp-software/" target="_blank">
-                            Education</a>
-                     </h3>
-                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-                        A Collaborative platform for educational management.
-                     </h3>
-                        </div>
-            </div>
-             <div style="flex-basis: 32%;padding-top: 20px;">
-
-                    <div style="width:30%; float:left;">
-                        <div style="width:75px;height:75px;background:#CE2D48; border-radius:100%;float: left;text-align: left;">
-                            <a href="https://www.cybrosys.com/odoo/industries/service-management/" target="_blank">
-                                <img src="https://www.cybrosys.com/images/odoo-index-industry-8.png" alt="Odoo Industry" style="    border-radius: 100%;width:100%;"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div style="width:70%;float:left;">
-                     <h3 class="oe_slogan" style=" text-align: left;font-size: 14px;font-weight:800;width: auto;margin: 0;margin-top: 14px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 4px;margin-left: 16px;">
-                        <a href="https://www.cybrosys.com/odoo/industries/service-management/" target="_blank">
-                            Service Management</a>
-                     </h3>
-                    <h3 class="oe_slogan" style=" text-align: left;font-size: 13px;width: auto;margin: 0;margin-top:5px;color: #000 !important;margin-top: 5px;opacity: 1 !important;line-height: 17px;float: left;margin-top: 5px;margin-left: 16px;">
-                        Keep track of services and invoice accordingly.
-                     </h3>
-                        </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="oe_container" style="background-image:url(https://www.cybrosys.com/images/odoo-index-footer-bg.png); background-repeat:no-repeat; background-size:100%;padding: 13% 0% 6% 0%;">
-    <div class="oe_slogan" style="margin-top:10px !important;margin-bottom: 0px;">
-        <div>
-            <a style="color: #5c5c5c !important;border-radius: 0;background: none;border: none;background: #fff;box-shadow: 0 10px 40px 0 rgba(62,57,107,0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.05);border-radius: 30px;font-size: 12px;padding: 9px 26px;margin-right: 9px;width: 200px;text-transform: capitalize;" class="btn btn-primary btn-lg mt8" style="color: #FFFFFF !important;border-radius: 0;" href="mailto:odoo@cybrosys.com"><i class="fa fa-envelope"></i> Email us </a>
-            <a style="color: #5c5c5c !important;border-radius: 0;background: none;border: none;background: #fff;box-shadow: 0 10px 40px 0 rgba(62,57,107,0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.05);border-radius: 30px;font-size: 12px;padding: 9px 26px;margin-right: 9px;width: 200px;text-transform: capitalize;" class="btn btn-primary btn-lg mt8" style="color: #FFFFFF !important;border-radius: 0;" href="https://www.cybrosys.com/contact/"><i class="fa fa-phone"></i> Contact Us </a>
-            <a style="color: #5c5c5c !important;border-radius: 0;background: none;border: none;background: #fff;box-shadow: 0 10px 40px 0 rgba(62,57,107,0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.05);border-radius: 30px;font-size: 12px;padding: 9px 26px;margin-right: 9px;width: 200px;text-transform: capitalize;" class="btn btn-primary btn-lg mt8" style="color: #FFFFFF !important;border-radius: 0;" href="https://www.cybrosys.com/contact/"><i class="fa fa-check-square"></i> Request Customization </a>
-        </div>
-        <br>
-        <img src="https://www.cybrosys.com/images/logo.png" style="width: 190px; margin-bottom: 25px;margin-top: 30px;" class="center-block">
-        <div>
-          <a href="https://twitter.com/cybrosys" target="_blank"><i class="fa fa-2x fa-twitter" style="color:white;background: #00a0d1;width:35px;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-          <a href="https://www.linkedin.com/company/cybrosys-technologies-pvt-ltd" target="_blank"><i class="fa fa-2x fa-linkedin" style="color:white;background: #31a3d6;width:35px;padding-left: 3px;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-          <a href="https://www.facebook.com/cybrosystechnologies" target="_blank"><i class="fa fa-2x fa-facebook" style="color:white;background: #3b5998;width:35px; ;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-          <a href="https://plus.google.com/106641282743045431892/about" target="_blank"><i class="fa fa-2x fa-google-plus" style="color:white;background: #c53c2c;width:35px;padding-left: 3px;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-          <a href="https://in.pinterest.com/cybrosys" target="_blank"><i class="fa fa-2x fa-pinterest" style="color:white;background: #ac0f18;width:35px;padding-left: 3px;height: 35px;padding-top: 7px;font-size: 21px;margin-right: 6px;border-radius: 100%;"></i></a></td>
-        </div>
-    </div>
 </section>
 
 
-
-
-
+                

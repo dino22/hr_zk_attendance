@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 ###################################################################################
 #
-#    Cybrosys Technologies Pvt. Ltd.
-#    Copyright (C) 2018-TODAY Cybrosys Technologies(<http://www.cybrosys.com>).
-#    Author: cybrosys(<https://www.cybrosys.com>)
 #
 #    This program is free software: you can modify
 #    it under the terms of the GNU Affero General Public License (AGPL) as
@@ -21,5 +18,3 @@
 ###################################################################################
 from . import zk_machine
 from . import machine_analysis
-from . import zklib
-

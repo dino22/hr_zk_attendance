@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 ###################################################################################
 #
-#    Cybrosys Technologies Pvt. Ltd.
-#    Copyright (C) 2018-TODAY Cybrosys Technologies(<http://www.cybrosys.com>).
-#    Author: cybrosys(<https://www.cybrosys.com>)
-#
 #    This program is free software: you can modify
 #    it under the terms of the GNU Affero General Public License (AGPL) as
 #    published by the Free Software Foundation, either version 3 of the
@@ -21,12 +17,17 @@
 ###################################################################################
 from odoo import tools
 from odoo import models, fields, api, _
-
+from odoo.exceptions import UserError, ValidationError
 
 class HrEmployee(models.Model):
     _inherit = 'hr.employee'
+    device_id = fields.Char(string='Biometric Device ID')  
 
-    device_id = fields.Char(string='Biometric Device ID')
+    @api.constrains('device_id')
+    def check_unique_deviceid(self):
+        records = self.env['hr.employee'].search([('device_id', '=', self.device_id),('device_id', '!=', False ),('id', '!=', self.id)])
+        if records:
+            raise UserError(_('Another User with same Biometric Device ID already exists.'))
 
 
 class ZkMachine(models.Model):
@@ -62,7 +63,7 @@ class ReportZkDevice(models.Model):
     _order = 'punching_day desc'
 
     name = fields.Many2one('hr.employee', string='Employee')
-    punching_day = fields.Datetime(string='Date')
+    punching_day = fields.Date(string='Date')
     address_id = fields.Many2one('res.partner', string='Working Address')
     attendance_type = fields.Selection([('1', 'Finger'),
                                         ('15', 'Face'),
@@ -80,7 +81,7 @@ class ReportZkDevice(models.Model):
 
     def init(self):
         tools.drop_view_if_exists(self._cr, 'zk_report_daily_attendance')
-        query = """
+        self._cr.execute("""
             create or replace view zk_report_daily_attendance as (
                 select
                     min(z.id) as id,
@@ -100,7 +101,6 @@ class ReportZkDevice(models.Model):
                     z.punch_type,
                     z.punching_time
             )
-        """
-        self._cr.execute(query)
+        """)
 
 

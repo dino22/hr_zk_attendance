@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 ###################################################################################
 #
-#    Cybrosys Technologies Pvt. Ltd.
-#    Copyright (C) 2018-TODAY Cybrosys Technologies(<http://www.cybrosys.com>).
-#    Author: cybrosys(<https://www.cybrosys.com>)
-#
 #    This program is free software: you can modify
 #    it under the terms of the GNU Affero General Public License (AGPL) as
 #    published by the Free Software Foundation, either version 3 of the
@@ -20,23 +16,24 @@
 #
 ###################################################################################
 {
-    'name': 'Biometric Device Integration',
-    'version': '12.0.1.1.1',
+    'name': 'Biometric Device Integration PyZk',
+    'version': '11.4.1.0.0',
     'summary': """Integrating Biometric Device With HR Attendance (Face + Thumb)""",
-    'description': 'This module integrates Odoo with the biometric device(Model: ZKteco uFace 202)',
+    'description': 'This module integrates Odoo with the biometric device. (Check below or README.md for compatible devices.)',
     'category': 'Generic Modules/Human Resources',
-    'author': 'Cybrosys Techno Solutions, Mostafa Shokiel',
-    'company': 'Cybrosys Techno Solutions',
-    'website': "https://www.cybrosys.com",
+    'author': '10 Orbits',
+    'company': '10 Orbits',
+    'website': "https://erp.10orbits.com",
     'depends': ['base_setup', 'hr_attendance'],
     'data': [
         'security/ir.model.access.csv',
         'views/zk_machine_view.xml',
         'views/zk_machine_attendance_view.xml',
-        'data/download_data.xml'
+        'data/download_data.xml',
+        'views/css.xml'
 
     ],
-    'images': ['static/description/banner.gif'],
+    'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
     'demo': [],
     'installable': True,
